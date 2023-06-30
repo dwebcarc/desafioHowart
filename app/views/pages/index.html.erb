@@ -1,0 +1,26 @@
+<div class="container">
+<h1>Personajes Harry Potter y sus Casas</h1>
+</div>
+<br/>
+<div class="container">
+<div class="table-wrapper table-primary">
+        <table class="alt">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>House</th>
+                </tr>
+            </thead>
+            <tbody>
+            <% @character.each do |character|%>
+                <tr>
+                    <td><%= character.name%>  </td>
+                    <td><%= character.location%>  </td>
+                    <td><%= character.house%>  </td>              
+                </tr>
+                <%end%>
+            </tbody>
+        </table>
+    </div>
+    </div>
